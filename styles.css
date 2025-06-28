@@ -112,7 +112,11 @@ body {
     
     header {
       padding-top: 4rem; 
+      padding-right: 1rem;
       text-align: left; 
+    }
+    header h1{
+        font-size: 2.5rem;
     }
     .desktop-logo {
         display: none; /* Hide desktop logo */
