@@ -4,31 +4,21 @@ body {
     background-color: #F5F5F5;
     color: #1B1C2A;
   }
+  .hero-photo{
+    height: 200px;
+    width: 200px;
+  }
   .logo{
     width: 100px;
     height: 100px;
-    z-index: 10;
   }
-  /* Desktop logo visible only on desktop */
-.desktop-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: block;
-  }
-  
-  /* Mobile logo hidden by default */
-  .mobile-logo {
-    display: none;
-  }
-  
+ 
   header {
     background-color: #4169E1;
     color: white;
     padding: 5rem 5rem 3rem 2rem; 
     text-align: left;
     height: 80vh;
-    position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center; /* vertically center the content */
@@ -104,11 +94,6 @@ body {
   }
 
   @media (max-width: 768px) {
-    .mobile-logo {
-        display: block; /* Show mobile logo */
-        position: relative;
-        margin: 0 auto ;
-      }
     
     header {
       padding-top: 4rem; 
@@ -118,8 +103,16 @@ body {
     header h1{
         font-size: 2.5rem;
     }
-    .desktop-logo {
-        display: none; /* Hide desktop logo */
-      }
+        #navItems {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; /* aligns items to the right */
+    }
+
+    #navItems .nav-link {
+      width: 100%;
+      text-align: right;
+      padding-right: 1rem;
+    }
   }
   
