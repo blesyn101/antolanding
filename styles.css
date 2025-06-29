@@ -114,5 +114,8 @@ body {
       text-align: right;
       padding-right: 1rem;
     }
+    .cta button{
+        margin-top: 10px;
+    }
   }
   
